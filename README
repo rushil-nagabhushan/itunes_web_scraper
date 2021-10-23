@@ -1,0 +1,25 @@
+This is a hobby / side project that I created. My reason for creating it
+was because I ran out of new music to listen to in my ITunes playlist, and
+wanted to discover new songs by referring to ITunes Hot 100 songs every day.
+I added on the sing-along aspect to add some more purpose to this project.
+
+How it works:
+1. scraper.py contains all the core functions necessary for scraping the ITunes Hot 100 Daily page
+   and searching for specific songs on Youtube. This function also outputs a list of all the songs
+   in order, which is a key data structure within the scope of this project.
+2. app.py contains the Flask web interface    that allows the user to interact with the program through
+   button click and text entry input for song selection.
+3. Once the user inputs a random button click or a text entry, the designated app route will take control,
+   process the request appropriately, and return to the original HTML page.
+
+How to use it:
+1. Ensure that you have all the necessary Python packages downloaded.
+2. Clone or fork the repo locally.
+3. Run it on localhost (for now, currently exploring other hosting alternatives)
+4. Enjoy your stress-relieving musical experience!
+
+Planned updates:
+1. Hosting the app on a permanent service instead of just localhost.
+2. Beautifying the overall look and layout of the app using more HTML and CSS.
+3. Exploring and implementing different kinds of functionality for the app.
+

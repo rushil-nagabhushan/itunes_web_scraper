@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Sing Along to Lyrics App</title>
+    </head>
+
+<body>
+
+<h1>Sing Along to Lyrics App</h1>
+
+<form method="post" action="/random">
+    <input type="submit" name="random_button" value="Random Song Select"/>
+</form>
+
+<style> 
+  textarea {
+  width: 25%;
+  height: 20px;
+ <!--- padding: 12px 20px; --->
+ <!--- box-sizing: border-box; --->
+ <!--- border: 2px solid #ccc; --->
+ <!--- border-radius: 4px; --->
+  background-color: #f8f8f8;
+  font-size: 12px;
+  resize: none;
+  }
+</style>
+<form method="POST" action="/search"> 
+  <textarea name="textbox" action="/search"></textarea>
+  <button type="submit" name="search_button" value="Search">Search for Song</button>
+</form>
+
+<h2>Top 100 ITunes Songs of the Day</h2>
+{% for song_title in top_100_list %}
+    <p>{{ song_title }} </p>
+{% endfor %}
+
+    </body>
+</html>
